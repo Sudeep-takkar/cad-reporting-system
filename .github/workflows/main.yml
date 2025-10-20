@@ -38,7 +38,6 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        working-directory: ./cad-reporting-system
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
