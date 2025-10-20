@@ -36,8 +36,10 @@ jobs:
           node-version: lts/*
         
       - name: Install dependencies
+        working-directory: ./cad-reporting-system
         run: npm install
       - name: Build
+        working-directory: ./cad-reporting-system
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -45,7 +47,7 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           # Upload dist folder
-          path: './cad-reporting-system/dist'
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
