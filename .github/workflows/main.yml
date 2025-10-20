@@ -34,12 +34,10 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: lts/*
-          cache: 'npm'
-          cache-dependency-path: 'cad-reporting-system/package-lock.json'
         
       - name: Install dependencies
         working-directory: ./cad-reporting-system
-        run: npm ci
+        run: npm install
       - name: Build
         working-directory: ./cad-reporting-system
         run: npm run build
