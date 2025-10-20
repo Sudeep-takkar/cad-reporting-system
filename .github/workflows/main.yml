@@ -36,7 +36,6 @@ jobs:
           node-version: lts/*
         
       - name: Install dependencies
-        working-directory: ./cad-reporting-system
         run: npm install
       - name: Build
         working-directory: ./cad-reporting-system
