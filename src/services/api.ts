@@ -1,7 +1,7 @@
 import type { CADIncident } from '../types/incident';
 
 const API_BASE_URL = 'https://data.sfgov.org/resource/gnap-fj3t.json';
-const DEFAULT_LIMIT = 10; // Fetch last 10 records
+const DEFAULT_LIMIT = 1000; // Fetch last 1000 records
 
 export async function fetchIncidents(limit = DEFAULT_LIMIT): Promise<CADIncident[]> {
   try {
