@@ -93,7 +93,7 @@ npm run preview
 
 3. Open your browser to the URL shown (typically `http://localhost:5173`)
 
-4. The app will automatically fetch the latest 2,000 incident records from the SF Open Data API
+4. The app will automatically fetch the latest 1,000 incident records from the SF Open Data API
 
 ## 📦 Available Scripts
 
@@ -158,7 +158,7 @@ src/
 
 **Endpoint**: `https://data.sfgov.org/resource/gnap-fj3t.json`
 
-**Fetch Strategy**: Fetches most recent 2,000 records sorted by `received_datetime DESC`
+**Fetch Strategy**: Fetches most recent 1,000 records sorted by `received_datetime DESC`
 
 ## 🤖 AI Usage
 
